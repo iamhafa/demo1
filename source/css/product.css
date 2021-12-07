@@ -1,0 +1,122 @@
+:root {
+    --primaryColor: #f09d51;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.4s linear;
+    --logoSpacing: 0.3rem;
+      --primarySidebar: #08aeea;
+      --secondary: #13D2B8;
+      --purple: #bd93f9;
+      --pink: #ff6bcb;
+      --blue: #8be9fd;
+      --gray: #333;
+      --font: 'Faustina', serif;
+      --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+      --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
+};
+
+/* --------------- Products ---------------- */
+
+.products {
+  font-weight: lighter;
+  min-width: 500px;
+  padding: 4rem 0;
+}
+.product .section__title h2 {
+    /* width: 80vw; */
+    left: 2rem;
+    right: 2rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 4rem 1rem;
+    /* text-transform: capitalize; */
+    letter-spacing: var(--mainSpacing);
+  }
+  .products__center {
+    width: 80vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+  }
+  .img__container {
+    position: relative;
+    overflow: hidden;
+  }
+  .bag__btn {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    background: var(--primaryColor);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    font-weight: bold;
+    transition: var(--mainTransition);
+    transform: translateX(101%);
+    cursor: pointer;
+  }
+  .bag__btn:hover {
+    color: var(--mainWhite);
+  }
+  .fa-shopping-cart {
+    margin-right: 0.5rem;
+  }
+  .img__container:hover .bag__btn {
+    transform: translateX(0);
+  }
+  .product__img {
+    display: block;
+    width: 100%;
+    min-height: 15rem;
+    transition: var(--mainTransition);
+  }
+  .img__container:hover .product__img {
+    opacity: 0.5;
+  }
+  
+  .product h3 {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    letter-spacing: var(--mainSpacing);
+    text-align: center;
+  }
+  
+  .product h4 {
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+    letter-spacing: var(--mainSpacing);
+    color: var(--primaryColor);
+    text-align: center;
+  }
+  
+  .name__item{
+    margin-top: 0.7rem;
+    font-size: 1.28rem;
+    letter-spacing: 0.09rem;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+  .title{
+    letter-spacing: 0.07rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-transform: capitalize;
+  }
+  .remove__item{
+    font-size: 1rem;
+  }
+  .remove__item:hover{
+    color: crimson;
+  }
+  
+  /* ---------------End of Products ---------------- */
