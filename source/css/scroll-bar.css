@@ -1,0 +1,15 @@
+/* Custome Scroll-bar */
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 100px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #BDC3C7;
+    border-radius: 20px;
+    border: 3px solid #BDC3C7;
+}

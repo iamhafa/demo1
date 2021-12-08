@@ -37,7 +37,7 @@ class Products{
 
 
             //sử dụng API từ products.json
-            let result = await fetch("products.json");
+            let result = await fetch("json/products.json");
             let data = await result.json();
 
             let products = data.items;   //data hoac contenful
@@ -204,7 +204,9 @@ class UI{
         Storage.saveCart(cart);
         let button = this.getSingleButton(id);
         button.disabled = false;
-        button.innerHTML = `<i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</i>`;
+        button.innerHTML = `
+        <i class="fas fa-shopping-cart"></i>add to cart</i>
+        `;
     }
     getSingleButton(id){
         return buttonsDOM.find(button => button.dataset.id === id);

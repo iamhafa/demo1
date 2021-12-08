@@ -16,6 +16,7 @@
     --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
     --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
 };
+
 .active{
   cursor: pointer;
 }
@@ -37,7 +38,7 @@
   top: 0;
   right: 0;
   width: 500px;
-  height: 100vh;
+  height: 100%;
   overflow: scroll;
   z-index: 10000;
   background: rgb(231, 226, 221);
@@ -51,13 +52,14 @@
   cursor: pointer;
   color: #8c52ff;
   font-size: 30px;
+  right: 0.8rem;
 }
 .cart__items {
   position: absolute;
   top: 0px;
   font-size: 0.85rem;
-  right: -8px;
-  background: var(--purple);
+  right: -10px;
+  background: var(--primaryColor);
   padding: 0 5px;
   border-radius: 20%;
   color: var(--mainWhite);
@@ -96,8 +98,8 @@
   margin: 1.5rem 0;
 }
 .cart__item img {
-  width: 75px;
-  height: 75px;
+  width: 150px;
+  height: auto;
 }
 .cart__item h4 {
   font-size: 0.85rem;
@@ -110,6 +112,7 @@
 }
 .item__amount {
   text-align: center;
+  margin: 0px;
 }
 .remove__item {
   color: grey;
@@ -129,5 +132,34 @@
 }
 .cart__footer h3 {
   text-transform: capitalize;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+/*========== Responsive ===========*/
+
+/* for smart phone */
+@media only screen 
+   and (max-width : 400px) {
+   .cart{
+     width: 50vw;
+     height: 100%;
+   }
+}
+/* for smart tablet */
+@media only screen 
+   and (max-width : 768px) {
+   /* Styles here */
+   .cart{
+     width: 50vw;
+     height: 100%;
+   }
+}
+/* for laptop */
+@media only screen 
+   and (max-width : 1200px) {
+   /* Styles here */
+   .cart{
+     width: 30vw;
+     height: 100%;
+   }
 }

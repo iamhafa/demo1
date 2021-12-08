@@ -50,6 +50,7 @@
   }
   .bag__btn {
     position: absolute;
+    font-size: 0.8rem;
     top: 70%;
     right: 0;
     background: var(--primaryColor);
@@ -83,14 +84,14 @@
   
   .product h3 {
     text-transform: capitalize;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 1rem;
     letter-spacing: var(--mainSpacing);
     text-align: center;
   }
   
   .product h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 0.4rem;
     letter-spacing: var(--mainSpacing);
     color: var(--primaryColor);
@@ -108,7 +109,7 @@
   
   .title{
     letter-spacing: 0.07rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-transform: uppercase;
     text-transform: capitalize;
   }
