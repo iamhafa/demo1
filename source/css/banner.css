@@ -26,7 +26,6 @@ a {
 }
 
 
-/* --------------- Main ---------------- */
 .main {
   min-height: calc(100vh);
   background: url(/images/background-1.png) center/cover no-repeat;
@@ -35,13 +34,13 @@ a {
   justify-content: center;
 }
 
-@media screen and (max-width: 400px){
+/* @media screen and (max-width: 400px){
   .main{
     min-width: 500px;
   }
-}
+} */
 .banner {
-  font-family: 'Poppins', serif;
+  font-family: 'Chalemagne Std'; /*Cambria Math, Chalemagne Std, Curlz MT*/
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   display: inline-block;
@@ -49,6 +48,7 @@ a {
 }
 .banner__title {
   font-size: 3rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 3rem;
@@ -69,11 +69,6 @@ a {
   background: transparent;
   color: var(--primaryColor);
 }
-/* --------------- End of Main ---------------- */
-
-
-
-
-/*========== Responsive ===========*/
-
-
+.banner__btn:active {
+  background: #7873f5;
+}

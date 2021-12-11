@@ -19,68 +19,19 @@
           <link rel="stylesheet" href="./source/css/cart.css">
           <link rel="stylesheet" href="./source/css/product.css">
           <link rel="stylesheet" href="./source/css/scroll-bar.css">
+          <link rel="stylesheet" href="./source/css/scroll.css">
     
     <title>Topping Shop</title>
     
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #D6EAF8;">
-    <div class="container-fluid">
-      <img src="./images/topping.svg" width="40" height="32" class="d-inline-block align-text-top">
-      <a class="navbar-brand" href="home.html"><b>Topping Shop</b></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="home.html"><i class="fas fa-home" style="font-size: 1.1rem;"></i> Trang chủ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-us.html"><i class="fas fa-info-square" style="font-size: 1.1rem;"></i> Giới thiệu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="trending.html"><i class="fas fa-chart-line" style="font-size: 1.1rem;"></i> Xu hướng</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-          <style>
-            nav .collapse a:hover {
-              box-shadow: inset 0 -4px 0 0 #f09d51;
-            }
-          </style>
-      <!-- CART -->
-        <span class="cart__btn">
-          <span class="menu__icon">
-              <i class="fas fa-shopping-basket"></i>
-              <div class="cart__items">0</div>
-          </span>
-        </span>
-        <!-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
-    </div>
-  </nav>
-
+  <!-- Header here -->
     
     <!-- main -->
     <header class="main" id="main">
         <div class="banner">
-            <h1 class="banner__title">Furniture Collections</h1>
-            <button class="banner__btn">Shop now</button>
+            <h1 class="banner__title">Home Furniture Collections</h1>
+            <button class="banner__btn" id="liveToastBtn">Shop now</button>
         </div>
     </header>
     
@@ -105,73 +56,36 @@
                 
             </div>
             <div class="cart__footer">
-                <h3>your total : $ <span class="cart__total">0</span></h3>
+                <h3>your total :<span class="cart__total">0</span> &#8363;</h3>
                 <button class="clear__cart banner__btn">xóa toàn bộ</button>
             </div>
         </div>
     </div>
-            
-    <footer class="bd-footer py-5 mt-5 bg-light">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-lg-3 mb-3">
-            <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="home.html" aria-label="Topping Shop">
-              <img src="./images/topping.svg" width="40" height="32" class="d-inline-block align-text-top">
-              <span class="fs-5">Topping Shop</span>
-            </a>
-            <ul class="list-unstyled small text-muted">
-              <li class="mb-2">Website bán đồ dùng nội thất</li>
-              <li class="mb-2"></li>
-              <li class="mb-2"></li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-            <h5>Links</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="/">Home</a></li>
-              <li class="mb-2"><a href="/docs/5.1/">Docs</a></li>
-              <li class="mb-2"><a href="/docs/5.1/examples/">Examples</a></li>
-              <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
-              <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-2 mb-3">
-            <h5>Guides</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="/docs/5.1/getting-started/">Getting started</a></li>
-              <li class="mb-2"><a href="/docs/5.1/examples/starter-template/">Starter template</a></li>
-              <li class="mb-2"><a href="/docs/5.1/getting-started/webpack/">Webpack</a></li>
-              <li class="mb-2"><a href="/docs/5.1/getting-started/parcel/">Parcel</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-2 mb-3">
-            <h5>Projects</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
-              <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
-              <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
-              <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
-              <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-2 mb-3">
-            <h5>Community</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
-              <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
-              <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
-              <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
-              <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
-              <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
-            </ul>
-          </div>
-        </div>
+
+  
+  <!-- Footer here -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./favicon/favicon.ico" style="width: 15px;" class="rounded me-2" alt="...">
+        <strong class="me-auto">Topping</strong>
+        <small>now...</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
-    </footer>
+      <div class="toast-body">
+        &hearts; Hân hạnh được mang tới trải nghiệm mua sắm tuyệt vời dành cho bạn...
+      </div>
+    </div>
+  </div>
+
 
     <!-- javascript -->
     <script type="module" src="./source/js/main.js"></script>
-    <script type="module" src="./source/js/App.js"></script>
+    <script src="./Modules/Header.js"></script>
+    <script src="./Modules/Footer.js"></script>
+    <script src="./Modules/Scroll.js"></script>
+    <script src="./source/js/scroll.js"></script>
+    <script src="./source/js/liveToast.js"></script>
     <script src="./Bootstrap/js/bootstrap.js"></script>
 
     <!-- lấy API từ contentful.com -->

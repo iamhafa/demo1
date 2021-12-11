@@ -1,23 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="./Components/Header.js" defer></script>
-  <script src="./Components/Footer.js" defer></script>
-  <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="./source/css/banner.css">
-  <link rel="stylesheet" href="./source/css/cart.css">
-  <link rel="stylesheet" href="./source/css/product.css">
-  <link rel="stylesheet" href="./icons/css/all.css">
-  
-</head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- font awesome -->
+            <link rel="stylesheet" href="./icons/css/all.css"/>
+          <!-- boostrap -->
+            <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+              <!-- favicon -->
+              <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+              <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+              <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+              <link rel="icon" type="image/png" sizes="48x48" href="./favicon/favicon.ico">
+              <link rel="manifest" href="./favicon/site.webmanifest">
+          <!-- CSS -->
+            <link rel="stylesheet" href="./source/css/banner.css">
+            <link rel="stylesheet" href="./source/css/cart.css">
+            <link rel="stylesheet" href="./source/css/product.css">
+            <link rel="stylesheet" href="./source/css/scroll-bar.css">
+            <link rel="stylesheet" href="./source/css/scroll.css">
+      
+      <title>Topping Shop</title>
+      
+  </head>
 <body>
-  <div id="nav"></div>
+  <!-- Header here -->
+    
+    <!-- main -->
+    <header class="main" id="main">
+      <div class="banner">
+          <h1 class="banner__title">Home Furniture Collections</h1>
+          <button class="banner__btn">Shop now</button>
+      </div>
+  </header>
+  
+  <!-- products -->
+  <section class="product" id="product">
+      <div class="section__title">
+          <h2>List Products</h2>
+      </div>
+      <div class="products__center">
+          
+      </div>
+  </section>
+  
+  <!-- CART OVERLAY (when open cart)-->
+  <div class="cart__overlay" id="cart__overlay">
+      <div class="cart">
+          <span class="close__cart">
+              <i class="fas fa-window-close"></i>
+          </span>
+              <h2>your cart</h2>
+          <div class="cart__content">
+              
+          </div>
+          <div class="cart__footer">
+              <h3>your total :<span class="cart__total">0</span> &#8363;</h3>
+              <button class="clear__cart banner__btn">xóa toàn bộ</button>
+          </div>
+      </div>
+  </div>
 
-  <div id="footer"></div>
-  <script src="./source/js/main.js"></script>
+
+<!-- Footer here -->
+  <script src="./Modules/Header.js"></script>
+  <script src="./Modules/Footer.js"></script>
+  <script src="./Modules/Scroll.js"></script>
+  <script src="./source/js/trending.js"></script>
+  <script src="./Modules/Scroll.js"></script>
+  <script src="./source/js/scroll.js"></script>
+  <script src="./Bootstrap/js/bootstrap.js"></script>
+
+  <!-- lấy API từ contentful.com -->
+  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 </body>
 </html>

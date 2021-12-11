@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./source/css/login.css">
+    <link rel="stylesheet" href="./icons/css/all.css">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="./favicon/favicon.ico">
+        <link rel="manifest" href="./favicon/site.webmanifest">
+    <title>Đăng nhập | Mua sắm cùng Topping Shop</title>
+</head>
+<body>
+    <div class="wrapper shadow-lg">  <!-- shadow bootrap -->
+        <label>Login to shopping</label>
+        <form action="home.html">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" autocomplete="none" placeholder="Email*">
+                    <i class="icon fas fa-envelope"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                    <div class="error error-txt">Email không được để trống</div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password*">
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                    <div class="error error-txt">Password không được để trống</div>
+            </div>
+            <div class="pass-txt" id="liveToastBtn" type="button">Quên mật khẩu?</div>
+          <input type="submit" value="Đăng nhập">
+          <span>Chưa có tài khoản?</span>
+          <span class="sign-txt" id="liveToastBtn1"> Đăng kí ngay</span>
+        </form>
+        
+    <!-- Alert Boostrap -->
+        <div class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="./favicon/favicon.ico" style="width: 15px;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Topping</strong>
+                <small>warning...</small>
+                <button class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                <i class="far fa-exclamation-triangle"></i> Chức năng đang được phát triển...
+              </div>
+            </div>
+          </div>
+      </div>
+      
+    <script src="./source/js/login.js"></script>
+    <script src="./source/js/liveToast.js"></script>
+    <script src="./Bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

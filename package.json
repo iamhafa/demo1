@@ -1,0 +1,19 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "description": "Sell Home Furniture",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamhafa/demo1.git"
+  },
+  "author": "iamhafa",
+  "license": "ISC",
+  "GitHub": {
+    "url": "https://github.com/iamhafa/demo1.git"
+  },
+  "homepage": "https://github.com/iamhafa"
+}

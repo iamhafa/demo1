@@ -70,7 +70,7 @@ class UI{
                         </button>
                     </div>
                     <div class="name__item">${product.title}</div>
-                    <h4>$${product.price}</h4>
+                    <h4>${product.price} &#8363;</h4>
                 </div>
             <!-- end -->
                 `;
@@ -122,7 +122,7 @@ class UI{
         <img src=${item.image} alt="product">
         <div>
             <div class="title">${item.title}</div>
-            <h5>$${item.price}</h5>
+            <h5>${item.price} &#8363;</h5>
             <span class="remove__item" data-id=${item.id}>Xóa</span>
         </div>
         <div>
