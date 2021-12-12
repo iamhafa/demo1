@@ -1,0 +1,132 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Ghế Sofa",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/sofa-1.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Ghế Sofa",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/sofa-2.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Bộ bàn ghế gỗ",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/table-and-chair.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Đèn đọc sách (trắng)",
+        "price": 22.99,
+        "image": { "fields": { "file": { "url": "./images/table-lamp-1.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Đèn đọc sách (đen)",
+        "price": 88.99,
+        "image": { "fields": { "file": { "url": "./images/table-lamp-2.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Kệ TV",
+        "price": 32.99,
+        "image": { "fields": { "file": { "url": "./images/tv-shelf.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Combo bộ bàn ghế sofa",
+        "price": 45.99,
+        "image": { "fields": { "file": { "url": "./images/combo-table-and-chair.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Bàn trang điểm",
+        "price": 33.99,
+        "image": { "fields": { "file": { "url": "./images/makeup-table.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "Đèn bàn làm việc",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/lamp-1.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "10" },
+      "fields": {
+        "title": "Đèn phòng ngủ",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/lamp-2.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "11" },
+      "fields": {
+        "title": "Tủ đựng giày",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/cabinet-1.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "12" },
+      "fields": {
+        "title": "Ghế gỗ",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/chair-1.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "13" },
+      "fields": {
+        "title": "Bàn PC",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/table-pc.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "14" },
+      "fields": {
+        "title": "Giường ngủ",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/bed-2.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "15" },
+      "fields": {
+        "title": "queen panel bed",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/bed-3.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "16" },
+      "fields": {
+        "title": "Giường ngủ",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/bed-4.jpg" } } }
+      }
+    }
+  ]
+}

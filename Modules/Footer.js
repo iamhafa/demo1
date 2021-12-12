@@ -2,6 +2,8 @@ const footerTemplate = document.createElement('template');
 footerTemplate.innerHTML = `
 <footer class="bd-footer py-5 mt-5 bg-light">
   <div class="container py-5">
+  <img src="./images/footer-daylight.svg" alt="" style="margin-top: 5rem; background-color: antiquewhite;">
+  <div style="background-color: #0058A3; height: 162px; width: 100%;"></div>
     <div class="row">
       <div class="col-lg-3 mb-3">
         <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="home.html" aria-label="Topping Shop">
@@ -9,7 +11,7 @@ footerTemplate.innerHTML = `
           <span class="fs-5">Topping Shop</span>
         </a>
         <ul class="list-unstyled small text-muted">
-          <li class="mb-2">Website bán đồ dùng nội thất</li>
+          <li class="mb-2">Mang tiện nghi tới ngay bên bạn &hearts;</li>
           <li class="mb-2"></li>
           <li class="mb-2"></li>
         </ul>

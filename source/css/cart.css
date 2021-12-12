@@ -20,18 +20,7 @@
 .active{
   cursor: pointer;
 }
-.cart__overlay {
-  overflow-x: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  transition: var(--mainTransition);
-  background: rgb(240, 157, 81, 0.5);
-  z-index: 10000;
-  visibility: hidden;
-}
+
 .cart {
   font-size: 1.3rem;
   position: fixed;
@@ -52,7 +41,7 @@
   cursor: pointer;
   color: #8c52ff;
   font-size: 30px;
-  right: 0.8rem;
+  right: 1.2rem;
 }
 .cart__items {
   position: absolute;
@@ -68,28 +57,13 @@
   transform: scale(1.2);
   transition: 0.5s;
 }
-.showCart {
-  transform: translateX(0);
-}
-.transparentBcg {
-  visibility: visible;
-}
- 
-.close__cart {
-  font-size: 1.7rem;
-  cursor: pointer;
-}
 
-.close__cart:hover{
-  color: red;
-}
 .cart h2 {
   text-transform: capitalize;
   text-align: center;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 2rem;
 }
-/*---------- Cart Item -------------------- */
 .cart__item {
   display: grid;
   align-items: center;
@@ -110,20 +84,6 @@
   margin: 0.5rem 0;
   letter-spacing: var(--mainSpacing);
 }
-.item__amount {
-  text-align: center;
-  margin: 0px;
-}
-.remove__item {
-  color: grey;
-  cursor: pointer;
-}
-.fa-chevron-up,
-.fa-chevron-down {
-  color: var(--primaryColor);
-  cursor: pointer;
-}
-/*---------- End of Cart Item -------------------- */
 
 .cart__footer {
   margin-top: 2rem;
@@ -135,9 +95,54 @@
   margin-bottom: 2rem;
 }
 
-/*========== Responsive ===========*/
 
-/* for smart phone */
+.cart__overlay {
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: var(--mainTransition);
+  background: rgb(240, 157, 81, 0.5);
+  z-index: 10000;
+  visibility: hidden;
+}
+
+.showCart {
+  transform: translateX(0);
+}
+.transparentBcg {
+  visibility: visible;
+}
+ 
+.close__cart {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.close__cart:hover{
+  color: red;
+}
+
+
+.item__amount {
+  text-align: center;
+  margin: 0px;
+}
+
+.remove__item {
+  color: grey;
+  cursor: pointer;
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+
 @media only screen 
    and (max-width : 400px) {
    .cart{
@@ -145,19 +150,15 @@
      height: 100%;
    }
 }
-/* for smart tablet */
 @media only screen 
    and (max-width : 768px) {
-   /* Styles here */
    .cart{
      width: 50vw;
      height: 100%;
    }
 }
-/* for laptop */
 @media only screen 
    and (max-width : 1200px) {
-   /* Styles here */
    .cart{
      width: 30vw;
      height: 100%;

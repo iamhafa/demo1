@@ -37,7 +37,7 @@ class Products{
 
 
             //sử dụng API từ products.json
-            let result = await fetch("json/products.json");
+            let result = await fetch("API/products.json");
             let data = await result.json();
 
             let products = data.items;   //data hoac contenful
@@ -66,14 +66,14 @@ class UI{
                     <div class="img__container">
                         <img src=${product.image} alt="product" class="product__img">
                         <button class="bag__btn" data-id=${product.id}>
-                            <i class="fas fa-cart-plus">add to cart</i>
+                            <i class="fas fa-cart-plus"> Thêm vào giỏ</i>
                         </button>
                     </div>
                     <div class="name__item">${product.title}</div>
                     <h4>${product.price} &#8363;</h4>
                 </div>
             <!-- end -->
-                `;
+            `;
         });
         productsDOM.innerHTML = result;
     }
@@ -84,11 +84,11 @@ class UI{
             let id = button.dataset.id;
             let inCart = cart.find(item => item.id === id);
             if (inCart){
-                button.innerText = "Đã thêm";
+                button.innerHTML = "Đã thêm <i class='fas fa-check'></i>";
                 button.disabled = true;
             }
             button.addEventListener("click", event =>{
-                event.target.innerText = "Đã thêm";        
+                event.target.innerHTML = "Đã thêm <i class='fas fa-check'></i>";      
                 event.target.disabled = true;
                 //lay san pham trong danh sach san pham
                 let cartItem = {...Storage.getProduct(id), amount: 1};
@@ -101,7 +101,7 @@ class UI{
                 // hien thi san pham trong gio hang
                 this.addCartItem(cartItem);
                 // hien thi gio hang
-                this.showCart();
+                // this.showCart();
             });    
     });
     }
@@ -119,17 +119,17 @@ class UI{
         const div = document.createElement('div');
         div.classList.add('cart__item');
         div.innerHTML = `
-        <img src=${item.image} alt="product">
-        <div>
-            <div class="title">${item.title}</div>
-            <h5>${item.price} &#8363;</h5>
-            <span class="remove__item" data-id=${item.id}>Xóa</span>
-        </div>
-        <div>
-            <i class="fas fa-chevron-up" data-id=${item.id}></i>
-            <p class="item__amount">${item.amount}</p>
-            <i class="fas fa-chevron-down" data-id=${item.id}></i>
-        </div>
+                <img src=${item.image} alt="product">
+                <div>
+                    <div class="title">${item.title}</div>
+                    <h5>${item.price} &#8363;</h5>
+                    <span class="remove__item" data-id=${item.id}>Xóa</span>
+                </div>
+                <div>
+                    <i class="fas fa-chevron-up" data-id=${item.id}></i>
+                    <p class="item__amount">${item.amount}</p>
+                    <i class="fas fa-chevron-down" data-id=${item.id}></i>
+                </div>
         `;
     cartContent.appendChild(div);
     }
@@ -205,7 +205,7 @@ class UI{
         let button = this.getSingleButton(id);
         button.disabled = false;
         button.innerHTML = `
-        <i class="fas fa-shopping-cart"></i>add to cart</i>
+        <i class="fas fa-cart-plus"></i> Thêm vào giỏ</i>
         `;
     }
     getSingleButton(id){

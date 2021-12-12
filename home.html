@@ -16,12 +16,13 @@
             <link rel="manifest" href="./favicon/site.webmanifest">
         <!-- CSS -->
           <link rel="stylesheet" href="./source/css/banner.css">
+          <link rel="stylesheet" href="./source/css/service.css">
           <link rel="stylesheet" href="./source/css/cart.css">
           <link rel="stylesheet" href="./source/css/product.css">
           <link rel="stylesheet" href="./source/css/scroll-bar.css">
-          <link rel="stylesheet" href="./source/css/scroll.css">
+          <link rel="stylesheet" href="./source/css/scroll-top.css">
     
-    <title>Topping Shop</title>
+    <title>Topping Shop - Mang tiện nghi nội thất tới ngay bên bạn</title>
     
 </head>
 <body>
@@ -29,19 +30,20 @@
     
     <!-- main -->
     <header class="main" id="main">
-        <div class="banner">
+        <div class="banner shadow">
             <h1 class="banner__title">Home Furniture Collections</h1>
             <button class="banner__btn" id="liveToastBtn">Shop now</button>
         </div>
     </header>
     
+    
+
     <!-- products -->
     <section class="product" id="product">
         <div class="section__title">
             <h2>List Products</h2>
         </div>
         <div class="products__center">
-            
         </div>
     </section>
     
@@ -51,18 +53,50 @@
             <span class="close__cart">
                 <i class="fas fa-window-close"></i>
             </span>
-                <h2>your cart</h2>
+                <h2>Giỏ hàng của bạn</h2>
             <div class="cart__content">
                 
             </div>
             <div class="cart__footer">
-                <h3>your total :<span class="cart__total">0</span> &#8363;</h3>
+                <h3>Tổng tiền: <span class="cart__total">0</span>&#8363;</h3>
                 <button class="clear__cart banner__btn">xóa toàn bộ</button>
             </div>
         </div>
     </div>
 
-  
+  <!-- service -->
+  <div class="container mt-5" id="service">
+    <div class="row d-flex align-items-center">
+      <div class="col">
+        <span class="iconn">
+          <i class="fas fa-truck"></i>
+        </span>
+        <span>
+          <div class="slogan">Giao hàng miễn phí</div>
+          <div class="slogan-description">Đơn hàng trên 5 triệu</div>
+        </span>
+      </div>
+      <div class="col">
+        <span class="iconn">
+          <i class="fas fa-phone-alt"></i>
+        </span>
+        <span>
+          <div class="slogan">Bảo hành 2 năm</div>
+          <div class="slogan-description">Bảo hành tất cả các sản phẩm</div>
+        </span>
+      </div>
+      <div class="col">
+        <span class="iconn">
+          <i class="fas fa-dollar-sign"></i>
+        </span>
+        <span>
+          <div class="slogan">Giá gốc tận xưởng</div>
+          <div class="slogan-description">Cam kết giá rẻ từ xưởng sản xuất</div>
+        </span>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer here -->
   <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -81,8 +115,8 @@
 
     <!-- javascript -->
     <script type="module" src="./source/js/main.js"></script>
-    <script src="./Modules/Header.js"></script>
-    <script src="./Modules/Footer.js"></script>
+    <script src="./Modules/HeaderHome.js"></script>
+    <script src="./Modules/FooterNew.js"></script>
     <script src="./Modules/Scroll.js"></script>
     <script src="./source/js/scroll.js"></script>
     <script src="./source/js/liveToast.js"></script>

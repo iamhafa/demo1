@@ -21,103 +21,107 @@
 
 .products {
   font-weight: lighter;
-  min-width: 500px;
   padding: 4rem 0;
 }
+
 .product .section__title h2 {
-    /* width: 80vw; */
+  font-family: 'Curlz MT';
+  font-weight: 900;
     left: 2rem;
     right: 2rem;
     justify-content: center;
     text-align: center;
-    font-size: 2.5rem;
-    margin: 4rem 1rem;
-    /* text-transform: capitalize; */
-    letter-spacing: var(--mainSpacing);
-  }
-  .products__center {
-    width: 80vw;
-    margin: 0 auto;
-    max-width: 1170px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem;
-  }
-  .img__container {
-    position: relative;
-    overflow: hidden;
-  }
-  .bag__btn {
-    position: absolute;
-    font-size: 0.8rem;
-    top: 70%;
-    right: 0;
-    background: var(--primaryColor);
-    border: none;
-    text-transform: uppercase;
-    padding: 0.5rem 0.75rem;
-    letter-spacing: var(--mainSpacing);
-    font-weight: bold;
-    transition: var(--mainTransition);
-    transform: translateX(101%);
-    cursor: pointer;
-  }
-  .bag__btn:hover {
-    color: var(--mainWhite);
-  }
-  .fa-shopping-cart {
-    margin-right: 0.5rem;
-  }
-  .img__container:hover .bag__btn {
-    transform: translateX(0);
-  }
-  .product__img {
-    display: block;
-    width: 100%;
-    min-height: 15rem;
-    transition: var(--mainTransition);
-  }
-  .img__container:hover .product__img {
-    opacity: 0.5;
-  }
-  
-  .product h3 {
+    font-size: 3rem;
+    margin: 7rem 0 3rem 0;
     text-transform: capitalize;
-    font-size: 1rem;
-    margin-top: 1rem;
-    letter-spacing: var(--mainSpacing);
-    text-align: center;
-  }
+    letter-spacing: 5px;
+}
+.products__center {
+  width: 89vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+.product__img {
+  display: block;
+  width: 100%;
+  min-height: 10rem;
+  transition: var(--mainTransition);
+  border-radius: 2px;
+}
+.product h3 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+  text-transform: capitalize;
+}
+.product h4 {
+  margin-top: 0.4rem;
+  letter-spacing: var(--mainSpacing);
+  color: var(--primaryColor);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.img__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.bag__btn {
+  font-size: 0.7rem;
+  font-family: 'Tasman';
+  font-weight: 600;
+  bottom: 20%;
+  right: 0;
+  background: var(--primaryColor);
+  border: 3px solid wheat;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+  transform: translateX(101%);
+  cursor: pointer;
+  position: absolute;
+}
+
+.bag__btn:hover {
+  color: var(--mainWhite);
+}
   
-  .product h4 {
-    font-size: 1rem;
-    margin-top: 0.4rem;
-    letter-spacing: var(--mainSpacing);
-    color: var(--primaryColor);
-    text-align: center;
-  }
+.img__container:hover .bag__btn {
+  transform: translateX(0);
+}
+
+.img__container:hover .product__img {
+  opacity: 0.6;
+}
   
-  .name__item{
-    margin-top: 0.7rem;
-    font-size: 1.28rem;
-    letter-spacing: 0.09rem;
-    text-transform: uppercase;
-    text-transform: capitalize;
-    text-align: center;
-  }
+.name__item{
+  font-size: 1.28rem;
+  letter-spacing: 0.09rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 0.7rem;
+}
   
-  .title{
-    letter-spacing: 0.07rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-transform: capitalize;
-  }
-  .remove__item{
-    font-size: 1rem;
-  }
-  .remove__item:hover{
-    color: crimson;
-  }
+.title{
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.07rem;
+}
+
+.remove__item{
+  font-size: 1rem;
+}
+
+.remove__item:hover{
+  color: crimson;
+}
   
   /* ---------------End of Products ---------------- */

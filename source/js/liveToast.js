@@ -1,3 +1,4 @@
+// Đưa ra toast thông báo
 var toastTrigger = document.getElementById('liveToastBtn')
 var toastTrigger1 = document.getElementById('liveToastBtn1')
                     
