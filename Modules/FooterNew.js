@@ -3,7 +3,7 @@ footerNewTemplate.innerHTML = `
 <footer id="footer">
         <div class="footer-message">
         <div class="footer-backgroundImage">
-            <img src="./images/footer.svg" alt="footer" class="footer-image">
+            <img src="../images/footer.svg" alt="footer" class="footer-image">
         </div>
         <div class="footer-backgroundColor">
             
@@ -17,7 +17,6 @@ footerNewTemplate.innerHTML = `
                 #footer{
                     background-color: #f0ede8;
                     height: auto;
-                    margin-top: 8rem;
                 }
                 .footer-image {
                     margin-left: 2rem;
@@ -25,11 +24,11 @@ footerNewTemplate.innerHTML = `
                 }
                 .footer-backgroundImage img{
                     margin-top: 7rem;
-                    background-image: url(./images/footer-shine.svg);
+                    background-image: url(../images/footer-shine.svg);
                 }
                 .footer-backgroundColor{
                     background-color: #0058A3;
-                    height: 200px;
+                    height: 140px;
                     width: 100%;
                 }
             </style>

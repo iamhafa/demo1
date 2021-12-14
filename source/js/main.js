@@ -31,15 +31,11 @@ class Products{
             });
             
 
-            
-
-
-
-
             //sử dụng API từ products.json
-            let result = await fetch("API/products.json");
+            let result = await fetch("../API/products.json");
             let data = await result.json();
 
+                // CHỌN API
             let products = data.items;   //data hoac contenful
             
             products = products.map(item =>{
@@ -48,9 +44,10 @@ class Products{
                 const image = item.fields.image.fields.file.url;
                 return { title, price, id, image };
             });
+            console.warn("Lấy sản phẩm thành công!!");
             return products;
         } catch (error) {
-            console.warn("Lỗi");
+            console.error("LỖI! Không lấy được sản phẩm");
         }
     }
 }

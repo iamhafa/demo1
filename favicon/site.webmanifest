@@ -1,6 +1,7 @@
 {
     "name": "Topping Shop",
     "short_name": "TP",
+    "description": "Sell Home Furniture",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

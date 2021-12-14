@@ -41,13 +41,12 @@
   cursor: pointer;
   color: #8c52ff;
   font-size: 30px;
-  right: 1.2rem;
 }
 .cart__items {
   position: absolute;
   top: 0px;
-  font-size: 0.85rem;
-  right: -10px;
+  font-size: 0.8rem;
+  right: -8px;
   background: var(--primaryColor);
   padding: 0 5px;
   border-radius: 20%;

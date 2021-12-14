@@ -1,49 +1,72 @@
 const navTemplate = document.createElement('template');
 
 navTemplate.innerHTML = `
-  <nav class="navbar navbar-expand-md navbar-light position-absolute top-0 start-0 end-0" style="background-color: #AED6F1 ;">
-    <div class="container-fluid">
-      <img src="./images/topping.svg" width="40" height="32" class="d-inline-block align-text-top">
-      <a class="navbar-brand" href="home.html"><b>Topping Shop</b></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<header class="navbar navbar-expand-md bd-navbar nav-dark position-absolute top-0 start-0 end-0 shadow-sm">
+  <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+    <a class="navbar-brand p-0 me-2" href="home.html" aria-label="Bootstrap">
+      <img src="../images/topping.svg" width="40" height="35" class="d-block my-1">
+    </a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="home.html"><i class="fas fa-home" style="font-size: 1.1rem;"></i> Trang chủ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#service"><i class="fas fa-list" style:"font-size: 1.1rem"></i> Dịch vụ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#product"><i class="fas fa-shopping-cart" style:"font-size: 1.1rem"></i> Mua sắm</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-us.html"><i class="fas fa-info-square" style="font-size: 1.1rem;"></i> Giới thiệu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="trending.html"><i class="fas fa-chart-line" style="font-size: 1.1rem;"></i> Xu hướng</a>
-          </li>
-        </ul>
-          <style>
-            nav .collapse a:hover {
-              box-shadow: inset 0 -4px 0 0 #f09d51;
-              max-width: 200px
-            }
-          </style>
-          
-      <!-- Cart -->
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+      </svg>
+    </button>
+
+    <div class="navbar-collapse collapse show" id="bdNavbar" style="">
+      <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link tab p-2 active text" href="home.html"><i class="fas fa-home" style="font-size: 1.2rem;"></i> Trang chủ</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link tab p-2 text" aria-current="true" href="#product"><i class="fas fa-shopping-cart"></i> Mua sắm</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link tab p-2 text" href="#policy"><i class="fas fa-phone-alt"></i> CSKH</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link tab p-2 text" href="Trending.html"><i class="fas fa-chart-line"></i> Xu hướng</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link tab p-2 text" href="About-us.html"><i class="fas fa-info-square"></i> Giới thiệu</a>
+        </li>
+      </ul>
+
+      <hr class="d-md-none text-dark">
+
+      <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://github.com/iamhafa" target="_blank" rel="noopener">
+          <i class="fab fa-github icon"></i>
+          </a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://instagram.com/iamhafa" target="_blank" rel="noopener">
+          <i class="fab fa-instagram icon"></i>
+          </a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://twitter.com/iamhafa" target="_blank" rel="noopener">
+            <i class="fab fa-twitter icon"></i>
+          </a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2">
+          </a>
+        </li>
+
+        <!-- Cart -->
         <span class="cart__btn">
           <span class="menu__icon">
               <i class="fas fa-shopping-basket"></i>
               <div class="cart__items">0</div>
           </span>
         </span>
-        
-      </div>
+      </ul>
+
+      
     </div>
   </nav>
+</header>
 `;
 document.body.appendChild(navTemplate.content);

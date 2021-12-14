@@ -14,21 +14,23 @@ navTemplate.innerHTML = `
     </button>
 
     <div class="navbar-collapse collapse show" id="bdNavbar" style="">
-      <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+
+
+      <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0 nav nav-pills" id="pills-tab" role="tablist">
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 active text" href="home.html"><i class="fas fa-home" style="font-size: 1.2rem;"></i> Trang chủ</a>
+          <button class="nav-link tab p-2 active text id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" href=""><i class="fas fa-home" style="font-size: 1.2rem;"></i> Trang chủ</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 text" aria-current="true" href="#product"><i class="fas fa-shopping-cart"></i> Mua sắm</a>
+          <button class="nav-link tab p-2 text id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" aria-current="true" href="#product"><i class="fas fa-shopping-cart"></i> Mua sắm</button>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 text" href="#policy"><i class="fas fa-phone-alt"></i> CSKH</a>
+          <button class="nav-link tab p-2 text id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" href="#policy"><i class="fas fa-phone-alt"></i> CSKH</button>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 text" href="Trending.html"><i class="fas fa-chart-line"></i> Xu hướng</a>
+          <button class="nav-link tab p-2 text id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" href=""><i class="fas fa-chart-line"></i> Xu hướng</button>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 text" href="About-us.html"><i class="fas fa-info-square"></i> Giới thiệu</a>
+          <button class="nav-link tab p-2 text id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" href=""><i class="fas fa-info-square"></i> Giới thiệu</button>
         </li>
       </ul>
 
@@ -54,6 +56,15 @@ navTemplate.innerHTML = `
           <a class="nav-link p-2">
           </a>
         </li>
+
+        <!-- Cart -->
+        <span class="cart__btn">
+          <span class="menu__icon">
+              <i class="fas fa-shopping-basket"></i>
+              <div class="cart__items">0</div>
+          </span>
+        </span>
+      </ul>
 
       
     </div>

@@ -5,7 +5,7 @@
       "fields": {
         "title": "Ghế Sofa",
         "price": 10.99,
-        "image": { "fields": { "file": { "url": "./images/sofa-1.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/sofa-1.jpg" } } }
       }
     },
     {
@@ -13,7 +13,7 @@
       "fields": {
         "title": "Ghế Sofa",
         "price": 12.99,
-        "image": { "fields": { "file": { "url": "./images/sofa-2.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/sofa-2.jpg" } } }
       }
     },
     {
@@ -21,7 +21,7 @@
       "fields": {
         "title": "Bộ bàn ghế gỗ",
         "price": 12.99,
-        "image": { "fields": { "file": { "url": "./images/table-and-chair.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/table-and-chair.jpg" } } }
       }
     },
     {
@@ -29,7 +29,7 @@
       "fields": {
         "title": "Đèn đọc sách (trắng)",
         "price": 22.99,
-        "image": { "fields": { "file": { "url": "./images/table-lamp-1.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/table-lamp-1.jpg" } } }
       }
     },
     {
@@ -37,7 +37,7 @@
       "fields": {
         "title": "Đèn đọc sách (đen)",
         "price": 88.99,
-        "image": { "fields": { "file": { "url": "./images/table-lamp-2.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/table-lamp-2.jpg" } } }
       }
     },
     {
@@ -45,7 +45,7 @@
       "fields": {
         "title": "Kệ TV",
         "price": 32.99,
-        "image": { "fields": { "file": { "url": "./images/tv-shelf.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/tv-shelf.jpg" } } }
       }
     },
     {
@@ -53,7 +53,7 @@
       "fields": {
         "title": "Combo bộ bàn ghế sofa",
         "price": 45.99,
-        "image": { "fields": { "file": { "url": "./images/combo-table-and-chair.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/combo-table-and-chair.jpg" } } }
       }
     },
     {
@@ -61,7 +61,7 @@
       "fields": {
         "title": "Bàn trang điểm",
         "price": 33.99,
-        "image": { "fields": { "file": { "url": "./images/makeup-table.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/makeup-table.jpg" } } }
       }
     },
     {
@@ -69,7 +69,7 @@
       "fields": {
         "title": "Đèn bàn làm việc",
         "price": 10.99,
-        "image": { "fields": { "file": { "url": "./images/lamp-1.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/lamp-1.jpg" } } }
       }
     },
     {
@@ -77,7 +77,7 @@
       "fields": {
         "title": "Đèn phòng ngủ",
         "price": 10.99,
-        "image": { "fields": { "file": { "url": "./images/lamp-2.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/lamp-2.jpg" } } }
       }
     },
     {
@@ -85,7 +85,7 @@
       "fields": {
         "title": "Tủ đựng giày",
         "price": 10.99,
-        "image": { "fields": { "file": { "url": "./images/cabinet-1.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/cabinet-1.jpg" } } }
       }
     },
     {
@@ -93,7 +93,7 @@
       "fields": {
         "title": "Ghế gỗ",
         "price": 10.99,
-        "image": { "fields": { "file": { "url": "./images/chair-1.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/chair-1.jpg" } } }
       }
     },
     {
@@ -101,7 +101,7 @@
       "fields": {
         "title": "Bàn PC",
         "price": 10.99,
-        "image": { "fields": { "file": { "url": "./images/table-pc.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/table-pc.jpg" } } }
       }
     },
     {
@@ -109,7 +109,7 @@
       "fields": {
         "title": "Giường ngủ",
         "price": 10.99,
-        "image": { "fields": { "file": { "url": "./images/bed-2.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/bed-2.jpg" } } }
       }
     },
     {
@@ -117,7 +117,7 @@
       "fields": {
         "title": "queen panel bed",
         "price": 10.99,
-        "image": { "fields": { "file": { "url": "./images/bed-3.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/bed-3.jpg" } } }
       }
     },
     {
@@ -125,7 +125,7 @@
       "fields": {
         "title": "Giường ngủ",
         "price": 10.99,
-        "image": { "fields": { "file": { "url": "./images/bed-4.jpg" } } }
+        "image": { "fields": { "file": { "url": "../images/bed-4.jpg" } } }
       }
     }
   ]
