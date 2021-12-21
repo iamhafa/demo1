@@ -12,7 +12,7 @@
             <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
             <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
             <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-            <link rel="icon" type="image/png" sizes="48x48" href="../favicon/favicon.ico">
+            <link rel="icon" type="icon" sizes="48x48" href="../favicon/favicon.ico">
             <link rel="manifest" href="../favicon/site.webmanifest">
         <!-- CSS -->
           <link rel="stylesheet" href="../source/css/nav.css">
@@ -22,7 +22,21 @@
           <link rel="stylesheet" href="../source/css/product.css">
           <link rel="stylesheet" href="../source/css/scroll-bar.css">
           <link rel="stylesheet" href="../source/css/scroll-top.css">
+          <link rel="stylesheet" href="../source/css/footer.css">
+
+        <!-- javascript -->
+          <script src="../Modules/HeaderHome.js" defer></script>
+          <script src="../Modules/FooterNew.js" defer></script>
+          <script type="module" src="../source/js/trending.js"></script>
+          <script src="../Modules/Scroll.js" defer></script>
+          <script src="../source/js/scroll.js" defer></script>\
+          <!-- <script src="../source/js/tab.js" defer></script> -->
+          <script src="../source/js/liveToast.js" defer></script>
+          <script src="../Bootstrap/js/bootstrap.js" defer></script>
     
+        <!-- lấy API từ contentful.com -->
+          <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
     <title>Topping Shop &sdot; Mang tiện nghi nội thất tới ngay bên bạn</title>
     
 </head>
@@ -30,18 +44,18 @@
   <!-- Header here -->
     
     <!-- main -->
-    <header class="main" id="main">
+    <!-- <header class="main" id="main">
         <div class="banner shadow">
             <h1 class="banner__title">Home Furniture Collections</h1>
             <button class="banner__btn" id="liveToastBtn">Shop now</button>
         </div>
-    </header>
+    </header> -->
     
 
     <!-- products -->
     <section class="product" id="product">
         <div class="section__title">
-            <h2>List Products</h2>
+            <h2>Products Trending</h2>
         </div>
         <div class="products__center">
         </div>
@@ -64,38 +78,39 @@
         </div>
     </div>
 
-  <!-- service -->
-  <section class="container mt-5" id="policy">
-    <div class="row d-flex align-items-center">
-      <div class="col">
-        <span class="iconn">
-          <img class=" ls-is-cached lazyloaded" data-src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_1.png?v=10" src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_1.png?v=10" alt="icon">
-        </span>
-        <span>
-          <div class="slogan">Giao hàng nhanh chóng</div>
-          <div class="slogan-description">Miễn phí với đơn hàng trên 3 triệu</div>
-        </span>
+    
+    <!-- policy -->
+    <section class="container-fluid mt-5" id="policy">
+      <div class="row d-flex align-items-center">
+        <div class="col">
+          <span class="iconn">
+            <img class="" data-src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_1.png?v=10" src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_1.png?v=10" alt="icon">
+          </span>
+          <span>
+            <div class="slogan">Giao hàng nhanh chóng</div>
+            <div class="slogan-description">Miễn phí với đơn hàng trên 3 triệu</div>
+          </span>
+        </div>
+        <div class="col">
+          <span class="iconn">
+            <img class="" data-src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_2.png?v=10" src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_2.png?v=10" alt="icon">
+          </span>
+          <span>
+            <div class="slogan">Chính sách bảo hành</div>
+            <div class="slogan-description">Bảo hành 12 tháng, đổi trả 15 ngày</div>
+          </span>
+        </div>
+        <div class="col">
+          <span class="iconn">
+            <img class="" data-src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_3.png?v=10" src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_3.png?v=10" alt="icon">
+          </span>
+          <span>
+            <div class="slogan">Giá gốc tận xưởng</div>
+            <div class="slogan-description">Cam kết giá rẻ từ xưởng sản xuất</div>
+          </span>
+        </div>
       </div>
-      <div class="col">
-        <span class="iconn">
-          <img class=" ls-is-cached lazyloaded" data-src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_2.png?v=10" src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_2.png?v=10" alt="icon">
-        </span>
-        <span>
-          <div class="slogan">Chính sách bảo hành</div>
-          <div class="slogan-description">Bảo hành 12 tháng, đổi trả 15 ngày</div>
-        </span>
-      </div>
-      <div class="col">
-        <span class="iconn">
-          <img class=" ls-is-cached lazyloaded" data-src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_3.png?v=10" src="//theme.hstatic.net/1000409762/1000752712/14/policy_icon_3.png?v=10" alt="icon">
-        </span>
-        <span>
-          <div class="slogan">Giá gốc tận xưởng</div>
-          <div class="slogan-description">Cam kết giá rẻ từ xưởng sản xuất</div>
-        </span>
-      </div>
-    </div>
-  </section>
+    </section>
 
   
 
@@ -114,17 +129,7 @@
     </div>
   </div>
 
-    <!-- javascript -->
-    <script type="module" src="../source/js/trending.js"></script>
-    <script src="../Modules/HeaderHome.js"></script>
-    <script src="../Modules/FooterNew.js"></script>
-    <script src="../Modules/Scroll.js"></script>
-    <script src="../source/js/scroll.js"></script>
-    <script src="../source/js/liveToast.js"></script>
-    <script src="../Bootstrap/js/bootstrap.js"></script>
-
-    <!-- lấy API từ contentful.com -->
-    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    
     <!-- <script src="https://localhost:44327/api/app/furniture"></script> -->
 </body>
 </html>

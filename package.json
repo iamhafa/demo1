@@ -15,5 +15,8 @@
   "GitHub": {
     "url": "https://github.com/iamhafa/demo1.git"
   },
-  "homepage": "https://github.com/iamhafa"
+  "homepage": "https://github.com/iamhafa",
+  "dependencies": {
+    
+  }
 }

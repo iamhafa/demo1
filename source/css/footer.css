@@ -1,0 +1,28 @@
+::selection{
+    color: #fff;
+    background: #F39C12;
+}
+#footer{
+    background-color: #f0ede8;
+    height: auto;
+}
+.footer-image {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.footer-1 img{
+    margin-top: 7rem;
+    background-image: url(../../images/footer-shine.svg);
+}
+.footer-distance{
+    height: 2px;
+    width: auto;
+    background-color: #f0ede8;
+}
+
+.footer-2{
+    /* background-image: url(../../images/footer-2.png); */
+    height: 140px;
+    width: auto;
+    background-color: #0058A3;
+}

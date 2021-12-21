@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabs</title>
-        <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="./test.css">
-</head>
-<body>
-  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-    </li>
-  </ul>
-  
-      <script src="../Bootstrap/js/bootstrap.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./test.css">
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../images/background-1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/background-1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/background-1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/background-1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/background-1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/background-1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/background-1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/background-1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/background-1.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <script src="./test.js"></script>
+  </body>
 </html>

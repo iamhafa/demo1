@@ -6,7 +6,7 @@
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.4s linear;
   --logoSpacing: 0.3rem;
-    --primarySidebar: #08aeea;
+    --primarySelect: #f05123;
     --secondary: #13D2B8;
     --purple: #bd93f9;
     --pink: #ff6bcb;
@@ -24,6 +24,12 @@
 
 body{
   background-color: #f3f5f6;
+  overflow-x: hidden;
+}
+
+::selection{
+  background-color: var(--primarySelect);
+  color: #fff;
 }
 
 a {
@@ -33,6 +39,7 @@ a {
 .main {
   min-height: calc(100vh);
   background: url(/images/background-1.png) center/cover no-repeat;
+  border-bottom: 1px solid #e1e3e4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,5 +89,5 @@ a {
 }
 
 .banner__btn:active {
-  background: #7873f5;
+  background: var(--purple);
 }

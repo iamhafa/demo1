@@ -6,7 +6,7 @@
     --mainSpacing: 0.1rem;
     --mainTransition: all 0.4s linear;
     --logoSpacing: 0.3rem;
-      --primarySidebar: #08aeea;
+    --primarySelect: #f05123;
       --secondary: #13D2B8;
       --purple: #bd93f9;
       --pink: #ff6bcb;
@@ -17,7 +17,21 @@
       --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
 };
 
-/* --------------- Products ---------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection{
+  background-color: var(--primarySelect);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 
 .products {
   font-weight: lighter;
@@ -27,12 +41,10 @@
 .product .section__title h2 {
   font-family: 'Curlz MT';
   font-weight: 900;
-    left: 2rem;
-    right: 2rem;
     justify-content: center;
     text-align: center;
     font-size: 3rem;
-    margin: 7rem 0 3rem 0;
+    margin: 5rem 0 3rem 0;
     text-transform: capitalize;
     letter-spacing: 5px;
 }
@@ -123,5 +135,3 @@
 .remove__item:hover{
   color: crimson;
 }
-  
-  /* ---------------End of Products ---------------- */

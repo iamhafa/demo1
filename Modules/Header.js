@@ -1,7 +1,7 @@
 const navTemplate = document.createElement('template');
 
 navTemplate.innerHTML = `
-<header class="navbar navbar-expand-md bd-navbar nav-dark position-absolute top-0 start-0 end-0 shadow-sm">
+<header class="navbar navbar-expand-md bd-navbar nav-dark fixed-top shadow-sm">
   <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
     <a class="navbar-brand p-0 me-2" href="home.html" aria-label="Bootstrap">
       <img src="../images/topping.svg" width="40" height="35" class="d-block my-1">
@@ -13,10 +13,10 @@ navTemplate.innerHTML = `
       </svg>
     </button>
 
-    <div class="navbar-collapse collapse show" id="bdNavbar" style="">
+    <div class="navbar-collapse collapse" id="bdNavbar" style="">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 active text" href="home.html"><i class="fas fa-home" style="font-size: 1.2rem;"></i> Trang chủ</a>
+          <a class="nav-link tab p-2 text" href="Home.html"><i class="fas fa-home" style="font-size: 1.2rem;"></i> Trang chủ</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link tab p-2 text" aria-current="true" href="#product"><i class="fas fa-shopping-cart"></i> Mua sắm</a>
@@ -25,7 +25,7 @@ navTemplate.innerHTML = `
           <a class="nav-link tab p-2 text" href="#policy"><i class="fas fa-phone-alt"></i> CSKH</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 text" href="Trending.html"><i class="fas fa-chart-line"></i> Xu hướng</a>
+          <a class="nav-link tab p-2 text" href="Trending.html"><i class="fas fa-chart-line"></i> Thịnh hành</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link tab p-2 text" href="About-us.html"><i class="fas fa-info-square"></i> Giới thiệu</a>
@@ -54,7 +54,7 @@ navTemplate.innerHTML = `
           <a class="nav-link p-2">
           </a>
         </li>
-
+      <!-- cart -->
       
     </div>
   </nav>

@@ -4,7 +4,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #fff;
+    background: #FDFEFE;
 }
 
 body::-webkit-scrollbar-thumb {

@@ -1,7 +1,15 @@
-.container{
-  max-width: 100vw;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.container-fluid{
   border-top: 1px solid #e1e3e4;
-  /* height: 100px; */
 }
 
 .row{
@@ -18,14 +26,11 @@
 }
 
 .col{
-  
   display: flex;
   justify-content: center;
 }
 
 .slogan{
-  /* display: block; */
-  /* align-items: center; */
   font-size: 1.2rem;
   font-weight: bold;
 }
