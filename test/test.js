@@ -1,4 +1,7 @@
-var swiper = new Swiper(".mySwiper", {
+// import Swiper bundle with all modules installed
+import Swiper from '../node_modules/swiper/swiper-bundle.esm.browser.min.js';
+
+new Swiper('.swiper', {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {

@@ -23,7 +23,6 @@
           <link rel="stylesheet" href="../source/css/scroll-bar.css">
           <link rel="stylesheet" href="../source/css/scroll-top.css">
           <link rel="stylesheet" href="../source/css/footer.css">
-
         <!-- javascript -->
           <script src="../Modules/HeaderHome.js" defer></script>
           <script src="../Modules/FooterNew.js" defer></script>
@@ -32,7 +31,10 @@
           <script src="../source/js/scroll.js" defer></script>
           <script src="../source/js/liveToast.js" defer></script>
           <script src="../Bootstrap/js/bootstrap.js" defer></script>
-    
+        <!-- get API from contentful.com -->
+          <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+
     <title>Topping Shop &sdot; Mang tiện nghi nội thất tới ngay bên bạn</title>
     
 </head>
@@ -57,7 +59,7 @@
         </div>
     </section>
     
-    <!-- CART OVERLAY (when open cart)-->
+    <!-- cart overlay (when open cart)-->
     <div class="cart__overlay" id="cart__overlay">
         <div class="cart">
             <span class="close__cart">
@@ -74,7 +76,7 @@
         </div>
     </div>
 
-  <!-- service -->
+  <!-- policy -->
   <section class="container-fluid mt-5" id="policy">
     <div class="row d-flex align-items-center">
       <div class="col">
@@ -108,8 +110,10 @@
   </section>
 
   
-
   <!-- Footer here -->
+
+
+  <!-- toast -->
   <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
@@ -126,8 +130,7 @@
 
    
 
-    <!-- lấy API từ contentful.com -->
-    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    
     <!-- <script src="https://localhost:44327/api/app/furniture"></script> -->
 </body>
 </html>

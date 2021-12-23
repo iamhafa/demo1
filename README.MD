@@ -1,5 +1,7 @@
-## XÂY DỰNG WEBSITE BÁN ĐỒ DÙNG NỘI THẤT TOPPING SHOP
+#### XÂY DỰNG WEBSITE BÁN ĐỒ DÙNG NỘI THẤT TOPPING SHOP
 
-# Project được thực hiện bởi Nguyễn Cao Sang - 1821050830 - HUMG
+##### Project được thực hiện bởi Nguyễn Cao Sang - 1821050830 - HUMG
 
-- Ngôn ngữ và framework được sử dụng: HTML, CSS, JavaScript, Boostrap 5, .NET Core, ABP framework
+- Ngôn ngữ: HTML, CSS, JavaScript, .Net Core
+
+- Framework: Bootstrap 5, ABP
