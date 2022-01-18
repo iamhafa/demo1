@@ -1,5 +1,5 @@
 // import Swiper bundle with all modules installed
-import Swiper from '../../node_modules/swiper/swiper-bundle.esm.browser.min.js';
+import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
 
 new Swiper('.swiper', {
   spaceBetween: 30,

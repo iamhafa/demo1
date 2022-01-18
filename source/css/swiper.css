@@ -1,4 +1,4 @@
-@import "../../node_modules/swiper/swiper-bundle.css";
+@import "https://unpkg.com/swiper@7/swiper-bundle.min.css";
 html,
 body {
   position: relative;

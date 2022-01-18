@@ -17,7 +17,7 @@ navTemplate.innerHTML = `
     <div class="navbar-collapse collapse" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 active text" aria-current="page" href="Home.html"><i class="fas fa-home" style="font-size: 1.2rem;"></i> Home</a>
+          <a class="nav-link tab p-2 active text" aria-current="page" href="index.html"><i class="fas fa-home" style="font-size: 1.2rem;"></i> Home</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link tab p-2 text" aria-current="true" href="#product"><i class="fas fa-shopping-cart"></i> Shopping</a>
