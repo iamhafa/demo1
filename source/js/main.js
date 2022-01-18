@@ -1,9 +1,9 @@
-const client = contentful.createClient({
-    // This is the space ID. A space is like a project folder in Contentful terms
-    space: "ztj6dr0cbv1l",
-    // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-    accessToken: "Gsa_BTCp1vFvYJufZukIost1pcwaZKUBNOeUHzW9ezI"
-});
+// const client = contentful.createClient({
+//     // This is the space ID. A space is like a project folder in Contentful terms
+//     space: "ztj6dr0cbv1l",
+//     // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+//     accessToken: "Gsa_BTCp1vFvYJufZukIost1pcwaZKUBNOeUHzW9ezI"
+// });
 
 
 const cartBtn = document.querySelector('.cart__btn');
@@ -16,6 +16,8 @@ const cartTotal = document.querySelector('.cart__total');
 const cartContent = document.querySelector('.cart__content');
 const productsDOM = document.querySelector('.products__center');
 
+const purchase = document.querySelector('.purchase')
+
 // cart
 let cart = [];
 // buttons
@@ -26,9 +28,9 @@ class Products{
     async getProducts(){
         try {
             //sử dụng API sản phẩm của contentful.com
-            let contentful = await client.getEntries({
-                content_type: "toppingShop"
-            });
+            // let contentful = await client.getEntries({
+            //     content_type: "toppingShop"
+            // });
             
 
             //sử dụng API từ products.json
@@ -140,6 +142,7 @@ class UI{
         this.populateCart(cart);
         cartBtn.addEventListener("click", this.showCart);
         closeCartBtn.addEventListener("click", this.hideCart);
+        purchase.addEventListener("click", this.hideCart);
     }
     populateCart(cart){
         cart.forEach(item => this.addCartItem(item));

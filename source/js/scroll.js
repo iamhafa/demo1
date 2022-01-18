@@ -1,9 +1,9 @@
 window.addEventListener('scroll', e => {
-    var el = document.getElementById('jsScroll');
+    var scroll = document.getElementById('jsScroll');
     if(window.scrollY > 200) {
-      el.classList.add('visible');
+      scroll.classList.add('visible');
     } else {
-      el.classList.remove('visible');
+      scroll.classList.remove('visible');
     }
   });
   

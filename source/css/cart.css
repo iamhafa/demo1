@@ -124,6 +124,12 @@
   color: red;
 }
 
+/* .clear__cart {
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding: 5px 9px;
+  background-color: var(--primaryColor);
+} */
 
 .item__amount {
   text-align: center;

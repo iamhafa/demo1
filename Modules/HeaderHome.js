@@ -17,19 +17,17 @@ navTemplate.innerHTML = `
     <div class="navbar-collapse collapse" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 active text" aria-current="page" href="Home.html"><i class="fas fa-home" style="font-size: 1.2rem;"></i> Trang chủ</a>
+          <a class="nav-link tab p-2 active text" aria-current="page" href="Home.html"><i class="fas fa-home" style="font-size: 1.2rem;"></i> Home</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 text" aria-current="true" href="#product"><i class="fas fa-shopping-cart"></i> Mua sắm</a>
+          <a class="nav-link tab p-2 text" aria-current="true" href="#product"><i class="fas fa-shopping-cart"></i> Shopping</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 text" href="#policy"><i class="fas fa-phone-alt"></i> CSKH</a>
+          <a class="nav-link tab p-2 text" href="#policy"><i class="fas fa-phone-alt"></i> Contact</a>
         </li>
+        
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 text" href="Trending.html"><i class="fas fa-chart-line"></i> Thịnh hành</a>
-        </li>
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link tab p-2 text" href="About-us.html"><i class="fas fa-info-square"></i> Giới thiệu</a>
+          <a class="nav-link tab p-2 text" href="#"><i class="fas fa-info-square"></i> About-us</a>
         </li>
       </ul>
 
